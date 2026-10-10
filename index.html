@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonTicTacToe - Prodigy WD_03</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tic-Tac-Toe <span>AI Arena</span></h1>
+        <p class="subtitle">Player (X) vs AI Bot (O)</p>
+
+        <!-- Game Status Display -->
+        <div class="status-card">
+            <h2 id="statusText">Your Turn (X)</h2>
+        </div>
+
+        <!-- 3x3 Game Board -->
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+            <!-- Winning strike line overlay -->
+            <div id="winningLine" class="winning-line"></div>
+        </div>
+
+        <!-- Restart Button -->
+        <button id="restartBtn" class="btn restart-btn">
+            <i class="fa-solid fa-rotate-right"></i> Restart Game
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
